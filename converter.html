@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pics/icon/favicon.ico">
+    <title>Convert Live Forex Currency Exchange Rate | Currency Converter</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="/styles/converter.css">
+<script src="scripts/converter.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<body>
+
+    <div>
+        <header id="header">
+            <div class="inner">
+                <a href="/" class="logo" id="logo-a">
+                    <img src="/pics/logo.png?v=0.6" alt="whoisfreaks"></a>
+                <nav id="nav" class="">
+                    <div class="dropdown"><a>
+                            <span>Products <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content"><a>
+                                <div class="subHeading">APIs</div>
+                            </a><a href="/products/whois-lookup-api.html">Whois Lookup API</a>
+                            <a href="/products/whois-history-api.html">Whois History API</a>
+                            <a href="/products/reverse-whois-api.html">Reverse Whois API</a>
+                            <a href="/products/domain-availability-api.html">Domain Availability API</a>
+                            <a href="/products/newly-registered-domains.html">Newly Registered Domains</a>
+                            <a href="/products/expiring-dropped-domains.html">Expiring &amp; Dropped Domains</a>
+                            <a>
+                                <div class="subHeading">Utility</div>
+                            </a>
+                            <a href="/products/bulk-whois-lookup.html">Bulk WHOIS Lookup</a>
+                            <a>
+                                <div class="subHeading">Databases</div>
+                            </a>
+                            <a href="/products/whois-database.html">WHOIS Domains Database</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a class="pl-0">
+                            <span>Documentation <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content max-height-400 overflowy-auto"><a class="pl-0">
+                                <div class="subHeading">APIs</div>
+                            </a><a href="/documentation/api/whois-api.html">Whois Lookup API</a>
+                            <a href="/documentation/api/whois-history-api.html">Whois History API</a>
+                            <a href="/documentation/api/whois-reverse-api.html">Reverse Whois API</a>
+                            <a href="/documentation/api/domain-availability-api.html">Domain Availability API</a>
+                            <a href="/documentation/api/bulk-domain-availability-api.html">Bulk Domain Availability
+                                API</a>
+                            <a href="/documentation/domains/newly-registered-domains.html">Newly Registered Domains</a>
+                            <a href="/documentation/domains/expiring-domains.html">Expiring Domains</a>
+                            <a href="/documentation/domains/deleted-domains.html">Deleted Domains</a>
+                            <a>
+                                <div class="subHeading">Utility</div>
+                            </a>
+                            <a href="/documentation/utility/bulk-whois-lookup.html">Bulk WHOIS Lookup</a>
+                            <a>
+                                <div class="subHeading">Databases</div>
+                            </a>
+                            <a href="/documentation/database/whois-database-subscription.html">WHOIS Database
+                                Subscription</a>
+                            <a href="/documentation/database/whois-database.html">WHOIS Database Download</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a class="pl-0">
+                            <span>Demo <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content max-height-400 overflowy-auto"><a class="pl-0">
+                                <div class="subHeading">APIs</div>
+                            </a><a href="https://demo.whoisfreaks.com/live">Whois Lookup API</a>
+                            <a href="https://demo.whoisfreaks.com/historical">Whois History API</a>
+                            <a href="https://demo.whoisfreaks.com/reverse">Reverse Whois API</a>
+                            <a href="https://demo.whoisfreaks.com/domainavailability">Domain Availability API</a>
+                        </div>
+                    </div>
+
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/signup.html">Sign Up</a>
+                    <a href="https://billing.whoisfreaks.com">Sign In</a>
+                </nav>
+            </div>
+        </header>
+        <a id="toggle" class="" onclick="navtoggler()"><span></span></a>
+    </div>
+
+    <header id="con_header">
+        <h1 id="display">Live Foreign Currency Exchange (Forex) Rate Converter</h1>
+    </header>
+
+    <div id="body">
+        <div id="content">
+            <div class="sec" id="sec1">
+                <header>We Use Mid-Market Exchange Rates</header>
+                <div class="row">
+                    <div id="stp1">
+                        <p>Amount</p><input type="number" placeholder="Amount" value="1" step="any" id="amount">
+
+                    </div>
+                    <div id="stp2">
+                        <p>From</p><select id="from" class="dropDown">
+                            <option value=1>🇵🇰&emsp;PKR - Pakistan Rupee</option>
+                            <option value=10>🇦🇫&emsp;AFN - Afghani</option>
+                            <option value=20>🇨🇦&emsp;CAD - Canadian Dollar</option>
+                            <option value=30>🇬🇧&emsp;GBP - Pound Sterling</option>
+                            <option value=40>🇰🇼&emsp;KWD - Kuwaiti Dinar</option>
+                            <option value=50>🇸🇦&emsp;SAR - Saudi Riyal</option>
+                            <option value=60>🇺🇸&emsp;USD - US Dollar</option>
+                        </select>
+                    </div>
+                    <button class="swap-btn" onclick="swapValues()">⇄</button>
+                    <div id="stp3">
+                        <p>To</p><select id="to" class="dropDown">
+                            <option value=60>🇺🇸&emsp;USD - US Dollar</option>
+                            <option value=10>🇦🇫&emsp;AFN - Afghani</option>
+                            <option value=20>🇨🇦&emsp;CAD - Canadian Dollar</option>
+                            <option value=30>🇬🇧&emsp;GBP - Pound Sterling</option>
+                            <option value=40>🇰🇼&emsp;KWD - Kuwaiti Dinar</option>
+                            <option value=1>🇵🇰&emsp;PKR - Pakistan Rupee</option>
+                            <option value=50>🇸🇦&emsp;SAR - Saudi Riyal</option>
+                        </select>
+                    </div>
+                </div>
+                <footer id="ftr">
+                    <button onclick="convert()">Convert</button>
+                </footer>
+            </div>
+            <div id="sec4" style="display: none;">
+                <b>Converted Amount</b>
+                <div class="sec" id="conversion">
+                    <div id="result"></div>
+                    <div id="rate"></div>
+                </div>
+            </div>
+            <div id="newsec">
+                <p id="date">Live Exchange Rates: 2022-10-05 21:24</p>
+                <div class="sec">
+                    <div class="inside">
+                        <div class="row">
+                            <div>
+                                <span id="inverse">Inverse </span>
+                                <label class="switch">
+                                    <input type="checkbox" id="inverseToggle" onchange="inverse(this)">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="portion">
+                                <img src="/pics/icon/gbp.png" alt="GBP icon"> <span id="gbp">1 GBP</span>
+                            </div>
+                            <div class="portion">
+                                <img src="/pics/icon/usd.png" alt="USD icon"> <span id="usd">1 USD</span>
+                            </div>
+                            <div class="portion">
+                                <img src="/pics/icon/kwd.png" alt="KWD icon"> <span id="kwd">1 KWD</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="pk">
+                                <img src="/pics/icon/pkr.png" alt="flag">
+                                <span id="pkr">PKR</span>
+                                <img style="width: unset;padding-left: 15px;" src="/pics/icon/logo.png" alt="icon">
+                            </div>
+                            <div class="portion"><span id="gbpP">30</span></div>
+                            <div class="portion"><span id="usdP">60</span></div>
+                            <div class="portion"><span id="kwdP">40</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec" id="sec2">
+                <b id="graphHeading">PKR to USD Last 10 Days Chart</b>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div id="sec3">
+                <div class="half">
+                    <section>
+                        <p class="text-center"><small>Pakistan Rupee to US Dollar</small></p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <img src="/pics/icon/pkr.png" alt="flag" style="width: 50px;">
+                                        <span class="nameWithFlag">PKR</span>
+                                    </th>
+                                    <th></th>
+                                    <th>
+                                        <img src="/pics/icon/usd.png" alt="flag" style="width: 50px;">
+                                        <span class="nameWithFlag">USD</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/1.5">1.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.01 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/2.5">2.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.02 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/4.5">4.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.02 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/8.5">8.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.04 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/16.5">16.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.08 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/32.5">32.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.14 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/64.5">64.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.28 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/128.5">128.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>0.55 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/256.5">256.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>1.09 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/512.5">512.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>2.18 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/1024.5">1024.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>4.35 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/2048.5">2048.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>8.7 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/4096.5">4096.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>17.39 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/8192.5">8192.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>34.78 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/PKR/USD/16384.5">16384.5 PKR</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>69.54 USD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <div class="half">
+                    <section>
+                        <p class="text-center"><small>US Dollar to Pakistan Rupee</small></p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <img src="/pics/icon/usd.png" alt="flag" style="width: 50px;">
+                                        <span class="nameWithFlag">USD</span>
+                                    </th>
+                                    <th></th>
+                                    <th>
+                                        <img src="/pics/icon/pkr.png" alt="flag" style="width: 50px;">
+                                        <span class="nameWithFlag">PKR</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/1.5">1.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>353.43 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/2.5">2.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>589.05 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/4.5">4.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>1060.29 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/8.5">8.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>2002.77 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/16.5">16.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>3887.72 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/32.5">32.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>7657.62 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/64.5">64.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>15197.43 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/128.5">128.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>30277.05 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/256.5">256.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>60436.28 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/512.5">512.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>120754.74 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/1024.5">1024.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>241391.67 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/2048.5">2048.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>482665.52 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/4096.5">4096.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>965213.22 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/8192.5">8192.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>1930308.62 PKR</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/convert/USD/PKR/16384.5">16384.5 USD</a>
+                                    </td>
+                                    <td>To</td>
+                                    <td>3860499.42 PKR</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section bg-with-black">
+        <div class="footer-top-section">
+            <div class="container">
+                <div class="rowfooter">
+
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <img src="/pics/logo.png?v=0.6" height="90px" width="108px" alt="WhoisFreaks">
+                            <ul class="fta-list">
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="/terms.html">Terms &amp; Conditions</a></li>
+                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Products</h3>
+                            <ul class="fta-list">
+                                <li><a href="/products/whois-lookup-api.html">Whois Lookup API</a></li>
+                                <li><a href="/products/whois-history-api.html">Whois History API</a></li>
+                                <li><a href="/products/reverse-whois-api.html">Reverse Whois API</a></li>
+                                <li><a href="/products/domain-availability-api.html">Domain Availability API</a></li>
+                                <li><a href="/products/bulk-whois-lookup.html">Bulk Whois Lookup</a></li>
+                                <li><a href="/products/newly-registered-domains.html">Newly Registered Domains</a></li>
+                                <li><a href="/products/expiring-dropped-domains.html">Expiring &amp; Dropped Domains</a>
+                                </li>
+                                <li><a href="/products/whois-database.html">WHOIS Domains Database</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Documentation</h3>
+                            <ul class="fta-list">
+                                <li><a href="/documentation/api/whois-api.html">Whois Lookup API</a></li>
+                                <li><a href="/documentation/api/whois-history-api.html">Whois History API</a></li>
+                                <li><a href="/documentation/api/whois-reverse-api.html">Reverse Whois API</a></li>
+                                <li><a href="/documentation/api/domain-availability-api.html">Domain Availability
+                                        API</a></li>
+                                <li><a href="/documentation/api/bulk-domain-availability-api.html">Bulk Domain
+                                        Availability API</a></li>
+                                <li><a href="/documentation/utility/bulk-whois-lookup.html">Bulk Whois Lookup</a></li>
+                                <li><a href="/documentation/domains/newly-registered-domains.html">Newly Registered
+                                        Domains</a></li>
+                                <li><a href="/documentation/domains/expiring-domains.html">Expiring Domains</a></li>
+                                <li><a href="/documentation/domains/deleted-domains.html">Dropped/Deleted Domains</a>
+                                </li>
+                                <li><a href="/documentation/database/whois-database-subscription.html">Whois Database
+                                        Subscription</a></li>
+                                <li><a href="/documentation/database/whois-database.html">Whois Database Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Pricing &amp; Accounts</h3>
+                            <ul class="fta-list">
+                                <li><a href="/pricing/api-plans.html">Pricing</a></li>
+                                <li><a href="/supported-tlds.html">Supported TLDs</a></li>
+                                <li><a href="/Update-Schedule-tlds.html">Update Schedule TLDs</a></li>
+                                <li><a href="/signup.html">Sign Up</a></li>
+                                <li><a href="https://billing.whoisfreaks.com">Sign In</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
+                                <li><a href="/site-navigation.html">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="rowfooter">
+                    <div class="col-xs-12">
+                        <div class="fba-copyright">
+                            <p>Copyright © <span id="currentYear">2022</span> WhoisFreaks. Made with <span
+                                    class="heart">♥</span> in Pakistan
+                                <img src="/pics/pakistan-flag.gif" alt="Pakistan flag">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="scripts/converter.js"></script>

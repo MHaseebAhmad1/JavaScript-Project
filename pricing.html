@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pics/icon/favicon.ico">
+    <title>Whois Pricing</title>
+</head>
+
+
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/pricing.css">
+<script src="scripts/toggle.js"></script>
+<script src="scripts/pricing.js"></script>
+
+<body onload="fetchText()">
+
+    <div>
+        <header id="header">
+            <div class="inner">
+                <a href="/" class="logo" id="logo-a">
+                    <img src="/pics/logo.png?v=0.6" alt="whoisfreaks"></a>
+                <nav id="nav" class="">
+                    <div class="dropdown"><a>
+                            <span>Products <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content"><a>
+                                <div class="subHeading">APIs</div>
+                            </a><a href="/products/whois-lookup-api.html">Whois Lookup API</a>
+                            <a href="/products/whois-history-api.html">Whois History API</a>
+                            <a href="/products/reverse-whois-api.html">Reverse Whois API</a>
+                            <a href="/products/domain-availability-api.html">Domain Availability API</a>
+                            <a href="/products/newly-registered-domains.html">Newly Registered Domains</a>
+                            <a href="/products/expiring-dropped-domains.html">Expiring &amp; Dropped Domains</a>
+                            <a>
+                                <div class="subHeading">Utility</div>
+                            </a>
+                            <a href="/products/bulk-whois-lookup.html">Bulk WHOIS Lookup</a>
+                            <a>
+                                <div class="subHeading">Databases</div>
+                            </a>
+                            <a href="/products/whois-database.html">WHOIS Domains Database</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a class="pl-0">
+                            <span>Documentation <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content max-height-400 overflowy-auto"><a class="pl-0">
+                                <div class="subHeading">APIs</div>
+                            </a><a href="/documentation/api/whois-api.html">Whois Lookup API</a>
+                            <a href="/documentation/api/whois-history-api.html">Whois History API</a>
+                            <a href="/documentation/api/whois-reverse-api.html">Reverse Whois API</a>
+                            <a href="/documentation/api/domain-availability-api.html">Domain Availability API</a>
+                            <a href="/documentation/api/bulk-domain-availability-api.html">Bulk Domain Availability
+                                API</a>
+                            <a href="/documentation/domains/newly-registered-domains.html">Newly Registered Domains</a>
+                            <a href="/documentation/domains/expiring-domains.html">Expiring Domains</a>
+                            <a href="/documentation/domains/deleted-domains.html">Deleted Domains</a>
+                            <a>
+                                <div class="subHeading">Utility</div>
+                            </a>
+                            <a href="/documentation/utility/bulk-whois-lookup.html">Bulk WHOIS Lookup</a>
+                            <a>
+                                <div class="subHeading">Databases</div>
+                            </a>
+                            <a href="/documentation/database/whois-database-subscription.html">WHOIS Database
+                                Subscription</a>
+                            <a href="/documentation/database/whois-database.html">WHOIS Database Download</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a class="pl-0">
+                            <span>Demo <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content max-height-400 overflowy-auto"><a class="pl-0">
+                                <div class="subHeading">APIs</div>
+                            </a><a href="https://demo.whoisfreaks.com/live">Whois Lookup API</a>
+                            <a href="https://demo.whoisfreaks.com/historical">Whois History API</a>
+                            <a href="https://demo.whoisfreaks.com/reverse">Reverse Whois API</a>
+                            <a href="https://demo.whoisfreaks.com/domainavailability">Domain Availability API</a>
+                        </div>
+                    </div>
+
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/signup.html">Sign Up</a>
+                    <a href="https://billing.whoisfreaks.com">Sign In</a>
+                </nav>
+            </div>
+        </header>
+        <a id="toggle" class="" onclick="navtoggler()"><span></span></a>
+    </div>
+
+    <div class="header">
+        <header>
+            <h1>API Pricing</h1>
+            <div class="subheading">
+                <p>API Plans</p>
+            </div>
+        </header>
+        <hr>
+        <br>
+        <div class="toggle">
+            <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" onchange="planDurationSwitch(this)">
+                <span class="slider"></span>
+            </label>
+            <span>Yearly</span>
+            <p>save <span>big</span> by paying annually! <img src="pics/icon/finger-pointing.png" alt="plan_switch"></p>
+        </div>
+    </div>
+    <div id="api_Plans_Monthly" style="display: block;">
+    </div>
+    <div id="api_Plans_Yearly" style="display: none;">
+    </div>
+
+    <footer class="footer-section bg-with-black">
+        <div class="footer-top-section">
+            <div class="container">
+                <div class="rowfooter">
+
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <img src="/pics/logo.png?v=0.6" height="90px" width="108px" alt="WhoisFreaks">
+                            <ul class="fta-list">
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="/terms.html">Terms &amp; Conditions</a></li>
+                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Products</h3>
+                            <ul class="fta-list">
+                                <li><a href="/products/whois-lookup-api.html">Whois Lookup API</a></li>
+                                <li><a href="/products/whois-history-api.html">Whois History API</a></li>
+                                <li><a href="/products/reverse-whois-api.html">Reverse Whois API</a></li>
+                                <li><a href="/products/domain-availability-api.html">Domain Availability API</a></li>
+                                <li><a href="/products/bulk-whois-lookup.html">Bulk Whois Lookup</a></li>
+                                <li><a href="/products/newly-registered-domains.html">Newly Registered Domains</a></li>
+                                <li><a href="/products/expiring-dropped-domains.html">Expiring &amp; Dropped Domains</a>
+                                </li>
+                                <li><a href="/products/whois-database.html">WHOIS Domains Database</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Documentation</h3>
+                            <ul class="fta-list">
+                                <li><a href="/documentation/api/whois-api.html">Whois Lookup API</a></li>
+                                <li><a href="/documentation/api/whois-history-api.html">Whois History API</a></li>
+                                <li><a href="/documentation/api/whois-reverse-api.html">Reverse Whois API</a></li>
+                                <li><a href="/documentation/api/domain-availability-api.html">Domain Availability
+                                        API</a></li>
+                                <li><a href="/documentation/api/bulk-domain-availability-api.html">Bulk Domain
+                                        Availability API</a></li>
+                                <li><a href="/documentation/utility/bulk-whois-lookup.html">Bulk Whois Lookup</a></li>
+                                <li><a href="/documentation/domains/newly-registered-domains.html">Newly Registered
+                                        Domains</a></li>
+                                <li><a href="/documentation/domains/expiring-domains.html">Expiring Domains</a></li>
+                                <li><a href="/documentation/domains/deleted-domains.html">Dropped/Deleted Domains</a>
+                                </li>
+                                <li><a href="/documentation/database/whois-database-subscription.html">Whois Database
+                                        Subscription</a></li>
+                                <li><a href="/documentation/database/whois-database.html">Whois Database Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Pricing &amp; Accounts</h3>
+                            <ul class="fta-list">
+                                <li><a href="/pricing/api-plans.html">Pricing</a></li>
+                                <li><a href="/supported-tlds.html">Supported TLDs</a></li>
+                                <li><a href="/Update-Schedule-tlds.html">Update Schedule TLDs</a></li>
+                                <li><a href="/signup.html">Sign Up</a></li>
+                                <li><a href="https://billing.whoisfreaks.com">Sign In</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
+                                <li><a href="/site-navigation.html">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="rowfooter">
+                    <div class="col-xs-12">
+                        <div class="fba-copyright">
+                            <p>Copyright © <span id="currentYear">2022</span> WhoisFreaks. Made with <span
+                                    class="heart">♥</span> in Pakistan
+                                <img src="/pics/pakistan-flag.gif" alt="Pakistan flag">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

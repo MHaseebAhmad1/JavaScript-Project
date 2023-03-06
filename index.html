@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pics/icon/favicon.ico">
+    <title>Whois Lookup API and Whois Domain Database - WhoisFreaks</title>
+</head>
+
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/footer.css">
+<script src="scripts/toggle.js"></script>
+<link rel="stylesheet" href="styles/homepage.css">
+
+<body>
+
+    <div>
+        <header id="header">
+            <div class="inner">
+                <a href="/" class="logo" id="logo-a">
+                    <img src="/pics/logo.png?v=0.6" alt="whoisfreaks"></a>
+                <nav id="nav" class="">
+                    <div class="dropdown"><a>
+                            <span>Products <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content"><a>
+                                <div class="subHeading">APIs</div>
+                            </a><a href="/products/whois-lookup-api.html">Whois Lookup API</a>
+                            <a href="/products/whois-history-api.html">Whois History API</a>
+                            <a href="/products/reverse-whois-api.html">Reverse Whois API</a>
+                            <a href="/products/domain-availability-api.html">Domain Availability API</a>
+                            <a href="/products/newly-registered-domains.html">Newly Registered Domains</a>
+                            <a href="/products/expiring-dropped-domains.html">Expiring &amp; Dropped Domains</a>
+                            <a>
+                                <div class="subHeading">Utility</div>
+                            </a>
+                            <a href="/products/bulk-whois-lookup.html">Bulk WHOIS Lookup</a>
+                            <a>
+                                <div class="subHeading">Databases</div>
+                            </a>
+                            <a href="/products/whois-database.html">WHOIS Domains Database</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a class="pl-0">
+                            <span>Documentation <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content max-height-400 overflowy-auto"><a class="pl-0">
+                                <div class="subHeading">APIs</div>
+                            </a><a href="/documentation/api/whois-api.html">Whois Lookup API</a>
+                            <a href="/documentation/api/whois-history-api.html">Whois History API</a>
+                            <a href="/documentation/api/whois-reverse-api.html">Reverse Whois API</a>
+                            <a href="/documentation/api/domain-availability-api.html">Domain Availability API</a>
+                            <a href="/documentation/api/bulk-domain-availability-api.html">Bulk Domain Availability
+                                API</a>
+                            <a href="/documentation/domains/newly-registered-domains.html">Newly Registered Domains</a>
+                            <a href="/documentation/domains/expiring-domains.html">Expiring Domains</a>
+                            <a href="/documentation/domains/deleted-domains.html">Deleted Domains</a>
+                            <a>
+                                <div class="subHeading">Utility</div>
+                            </a>
+                            <a href="/documentation/utility/bulk-whois-lookup.html">Bulk WHOIS Lookup</a>
+                            <a>
+                                <div class="subHeading">Databases</div>
+                            </a>
+                            <a href="/documentation/database/whois-database-subscription.html">WHOIS Database
+                                Subscription</a>
+                            <a href="/documentation/database/whois-database.html">WHOIS Database Download</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a class="pl-0">
+                            <span>Demo <i class="arrow down"></i></span>
+                        </a>
+                        <div class="dropdown-content max-height-400 overflowy-auto"><a class="pl-0">
+                                <div class="subHeading">APIs</div>
+                            </a><a href="https://demo.whoisfreaks.com/live">Whois Lookup API</a>
+                            <a href="https://demo.whoisfreaks.com/historical">Whois History API</a>
+                            <a href="https://demo.whoisfreaks.com/reverse">Reverse Whois API</a>
+                            <a href="https://demo.whoisfreaks.com/domainavailability">Domain Availability API</a>
+                        </div>
+                    </div>
+
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/signup.html">Sign Up</a>
+                    <a href="https://billing.whoisfreaks.com">Sign In</a>
+                </nav>
+            </div>
+        </header>
+        <a id="toggle" class="" onclick="navtoggler()"><span></span></a>
+    </div>
+
+
+    <div class="sec" id="sec1">
+        <div id="inner">
+            <div class="row ">
+                <div id="left">
+                    <header>
+                        <h1 style="letter-spacing: 1px">Best Source For Domain WHOIS Database and API</h1>
+                    </header>
+                    <p>We provide well-parsed and structured domain WHOIS data for all domain names, registrars,
+                        countries
+                        and TLDs since the birth of internet. Our carefully crawled current and historical domain data
+                        is
+                        available in the form of REST APIs, lookup tools, and downloadable database.</p>
+                    <a href="converter.html" id="button">Get Started</a>
+                </div>
+                <div id="right">
+                    <pre><code id="demo">
+{
+    "status": true,
+    "domain_name": "currencyfreaks.com",
+    "query_time": "2021-04-30 10:09:29",
+    "whois_server": "whois.namecheap.com",
+    "domain_registered": "yes",
+    "create_date": "2019-02-25",
+    "update_date": "2021-01-26",
+    "expiry_date": "2022-02-25",
+    "domain_registrar": {
+        "iana_id": "1068",
+        "registrar_name": "NAMECHEAP INC",
+        "whois_server": "whois.namecheap.com",
+        "website_url": "http://www.namecheap.com",
+        "email_address": "abuse@namecheap.com",
+        "phone_number": "+1.6613102107"
+    },
+    {...}
+}
+                </code>
+            </pre>
+                </div>
+            </div>
+            <div class="row" id="overlay">
+                <div class="step1">
+                    <h4>1986</h4>
+                    <p>Historical Data Since</p>
+                </div>
+                <div class="step1">
+                    <h4>1387+</h4>
+                    <p>TLDs</p>
+                </div>
+                <div class="step1">
+                    <h4>505M+</h4>
+                    <p>Domains Tracked</p>
+                </div>
+                <div class="step1">
+                    <h4>1420M+</h4>
+                    <p>WHOIS Records</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sec" id="sec2">
+        <div class="headinn">
+            <header>
+                <h3>WHOIS Domains Data APIs Portfolio</h3>
+                <p style="text-align: unset;">WhoisFreaks APIs portfolio caters for the diverse needs of CyberSecurity
+                    Analysts, Business Researchers
+                    and Brand Protection experts.</p>
+            </header>
+        </div>
+        <div class="portion">
+            <div class="upper row1">
+                <div class="step">
+                    <img src="/pics/icon/whois-lookup.svg" alt="icon" class="icon">
+                    <h4>Whois Lookup API</h4>
+                    <p>Get the WHOIS records and ownership details of any domain name, like owner name, email address,
+                        country, creation, last updated, expiration, location of both registrar and domain in the
+                        JSON/XML format.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/whois-history.svg" alt="icon" class="icon">
+                    <h4>Whois History API</h4>
+                    <p>Our WHOIS history API provide millions of current and historical WHOIS domain data records.
+                        WhoisFreaks history API database is regularly updated with the latest registration of all
+                        domains on a daily basis.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/whois-reverse.svg" alt="icon" class="icon">
+                    <h4>Reverse Whois API</h4>
+                    <p>You can execute a broad search for a particular domain keywords, owner name, email or company on
+                        our WHOIS data to discover domains owned by a company or person.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+
+                <div class="step">
+                    <img src="/pics/icon/newly-registered-domain.png" alt="icon" class="icon">
+                    <h4>Newly Registered Domains</h4>
+                    <p>Download vast amount of newly registered domains whois files through our API which contains the
+                        ownership information of a domain, its contact details and complete normalized whois data
+                        records. It is updated on daily basis.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/expiring-domain.png" alt="icon" class="icon">
+                    <h4>Expiring Domains</h4>
+                    <p>Download vast amount of expiring and expired domains whois files through our API which contains
+                        the ownership information of a domain, its contact details and complete normalized whois data
+                        records. It is updated on daily basis.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/deleted-domain.png" alt="icon" class="icon">
+                    <h4>Dropped/Deleted Domains</h4>
+                    <p>Download vast amount of recently dropped deleted domains whois files through our API which
+                        contains the ownership information of a domain, its contact details and complete normalized
+                        whois data records. It is updated on daily basis.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec odd" id="sec3">
+        <div class="headinn">
+            <header>
+                <h3>WHOIS Domains Database</h3>
+                <p>Over 4.5 Million domains are registered each month. Our WHOIS normalized database download provides
+                    you
+                    an evaluative domain information such as a domain owner name, registrant name, organization, email
+                    address, country, contact details, domain location and many more. Custom WHOIS domains database is
+                    sorted by registrant specific whois domains data, country specific whois domains data and an email
+                    specific whois domains data.</p>
+            </header>
+        </div>
+        <div class="portion">
+            <div class="lower row1">
+                <div class="step">
+                    <img src="/pics/icon/registrar-specific.svg" alt="icon" class="icon">
+                    <h4>Registrar Specific Domains</h4>
+                    <p>Registrar specific database provide you the complete whois information of the domains that are
+                        registered with a specific registrar like GoDaddy, Namecheap and so on.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/country-specific.svg" alt="icon" class="icon">
+                    <h4>Country Specific Domains</h4>
+                    <p>Country specific database provide you the complete whois information of the domains that belong
+                        to a specific country like USA, Canada, China and so on.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/tld-specific.svg" alt="icon" class="icon">
+                    <h4>TLDs Specific Domains</h4>
+                    <p>TLDs specific database provide you the complete whois information of the domains that are
+                        registered with a specific domain extension like '.com', '.io', '.net' and so on.</p>
+                    <a href="">More Details &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec" id="sec4">
+        <div class="inside">
+            <header>
+                <h3>Utility</h3>
+            </header>
+            <div class="row">
+                <div class="step">
+                    <h4>Domainer</h4>
+                    <p>You can download newly registered, expiring, dropped/deleted domains whois files
+                        from your dashboard manually by <a href="https://billing.whoisfreaks.com">signing-in</a> to your
+                        account and purchasing domainer package.</p>
+                </div>
+                <div class="step col">
+                    <img src="/pics/download-whois.svg" alt="image" class="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec odd" id="sec5">
+        <div class="row inside">
+            <div class="step">
+                <img src="/pics/test13.svg" alt="image" class="image">
+            </div>
+            <div class="step col">
+                <h4>Bulk WHOIS Lookup</h4>
+                <p>Get domain ownership information and whois data records from parsed whois database with a single
+                    query.
+                    Just upload the list of domain names in the bulk request. Once your bulk whois lookup request
+                    completed,
+                    you will receive an email with a link to download the result in CSV format.</p>
+                <a href="">More Details &gt;</a>
+            </div>
+        </div>
+    </div>
+    <div class="sec" id="sec6">
+        <header>
+            <h3>Our Core Features</h3>
+        </header>
+        <div class="row inside">
+            <div class="step">
+                <h4>Large Scale</h4>
+                <p>Our WHOIS domains database is efficiently parsed and normalized containing billions of whois domain
+                    records including subdomains as well. Also provide separated whois data records of 1387+ gTLDs and
+                    ccTLDs domains.</p>
+            </div>
+            <div class="step col">
+                <img src="/pics/test12.svg" alt="image" class="image">
+            </div>
+        </div>
+    </div>
+    <div class="sec odd" id="sec7">
+        <div class="row inside">
+            <div class="step">
+                <img src="/pics/ease-of-use.svg" alt="image" class="image">
+            </div>
+            <div class="step col">
+                <h4>Ease of Use</h4>
+                <p>Our system parsed and normalized character sets and line endings, pulls the various fields from the
+                    raw
+                    whois text, and puts the fields in a consistent, automation-friendly format (CSV or JSON). We
+                    provide
+                    required data results as ready-to-use and quickly integrable with any business systems.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sec" id="sec8">
+        <div class="row inside">
+            <div class="step">
+                <h4>Applicable & Up To Date</h4>
+                <p>Our database is updated daily with thousands of WHOIS records and domains information. We always try
+                    our
+                    best to enlarge our database and its correctness to increase its maximum practicability. We
+                    efficiently
+                    parse and normalize complete WHOIS data so that it can be quickly integrated into relevant systems.
+                </p>
+            </div>
+            <div class="step col">
+                <img src="/pics/up-to-date.svg" alt="image" class="image">
+            </div>
+        </div>
+    </div>
+    <div class="sec odd" id="sec9">
+        <div class="row inside">
+            <div class="step">
+                <img src="/pics/test16.svg" alt="image" class="image">
+            </div>
+            <div class="step col">
+                <h4>Well Founded Service</h4>
+                <p>We provide 24/7 premium customer support for all of our services. We are always ready to help the
+                    clients
+                    in the most efficient manner.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sec" id="sec10">
+        <header>
+            <h3>Common Use Cases</h3>
+        </header>
+        <div class="portion">
+            <div class="upper row">
+                <div class="step">
+                    <img src="/pics/icon/network.svg" alt="icon" class="icon">
+                    <h4>Real World Identity</h4>
+                    <p>Get the details of business location and contact information of a company, organization, or
+                        individual with a domain name that is operating a website or other publicly accessible web
+                        services using a domain name, for commercial or other purposes.</p>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/identity.svg" alt="icon" class="icon">
+                    <h4>Protection of Intellectual Property</h4>
+                    <p>Contact a domain name registrant to maintain accurate domain registration information and matters
+                        related to the protection and enforcement of intellectual property rights.</p>
+                </div>
+            </div>
+            <div class="middle row">
+                <div class="step">
+                    <img src="/pics/icon/domain.svg" alt="icon" class="icon">
+                    <h4>Domain Registration Issues</h4>
+                    <p>Troubleshoot domain registration problems. WHOIS domain data provide the details that are
+                        commonly used to determine and solve a domain registration ownership matter as like the domain
+                        registrant, find out created and expiry dates of a domain.</p>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/server.svg" alt="icon" class="icon">
+                    <h4>Find and contact network admins</h4>
+                    <p>Contact network administrators to resolve technical issues related to networks linked with a
+                        domain name, for example DNS or routing issues, origin and path analysis of DoS and other
+                        network-based attacks.</p>
+                </div>
+            </div>
+            <div class="lower row">
+                <div class="step">
+                    <img src="/pics/icon/security.svg" alt="icon" class="icon">
+                    <h4>Security Professionals</h4>
+                    <p>Security professionals and law enforcement agents use WHOIS to identify contact for a domain
+                        name. WHOIS information offer security researchers and threat hunters value especially when it
+                        comes to identifying threat actors.</p>
+                </div>
+                <div class="step">
+                    <img src="/pics/icon/card.svg" alt="icon" class="icon">
+                    <h4>Investigate Spam</h4>
+                    <p>Gather investigative leads, the WHOIS database is used to collect information on the website
+                        advertised in the spam and to find email addresses, identify the location of the responsible for
+                        the abuse, neglect, and crime involving fraud.</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section bg-with-black">
+        <div class="footer-top-section">
+            <div class="container">
+                <div class="rowfooter">
+
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <img src="/pics/logo.png?v=0.6" height="90px" width="108px" alt="WhoisFreaks">
+                            <ul class="fta-list">
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="/terms.html">Terms &amp; Conditions</a></li>
+                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Products</h3>
+                            <ul class="fta-list">
+                                <li><a href="/products/whois-lookup-api.html">Whois Lookup API</a></li>
+                                <li><a href="/products/whois-history-api.html">Whois History API</a></li>
+                                <li><a href="/products/reverse-whois-api.html">Reverse Whois API</a></li>
+                                <li><a href="/products/domain-availability-api.html">Domain Availability API</a></li>
+                                <li><a href="/products/bulk-whois-lookup.html">Bulk Whois Lookup</a></li>
+                                <li><a href="/products/newly-registered-domains.html">Newly Registered Domains</a></li>
+                                <li><a href="/products/expiring-dropped-domains.html">Expiring &amp; Dropped Domains</a>
+                                </li>
+                                <li><a href="/products/whois-database.html">WHOIS Domains Database</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Documentation</h3>
+                            <ul class="fta-list">
+                                <li><a href="/documentation/api/whois-api.html">Whois Lookup API</a></li>
+                                <li><a href="/documentation/api/whois-history-api.html">Whois History API</a></li>
+                                <li><a href="/documentation/api/whois-reverse-api.html">Reverse Whois API</a></li>
+                                <li><a href="/documentation/api/domain-availability-api.html">Domain Availability
+                                        API</a></li>
+                                <li><a href="/documentation/api/bulk-domain-availability-api.html">Bulk Domain
+                                        Availability API</a></li>
+                                <li><a href="/documentation/utility/bulk-whois-lookup.html">Bulk Whois Lookup</a></li>
+                                <li><a href="/documentation/domains/newly-registered-domains.html">Newly Registered
+                                        Domains</a></li>
+                                <li><a href="/documentation/domains/expiring-domains.html">Expiring Domains</a></li>
+                                <li><a href="/documentation/domains/deleted-domains.html">Dropped/Deleted Domains</a>
+                                </li>
+                                <li><a href="/documentation/database/whois-database-subscription.html">Whois Database
+                                        Subscription</a></li>
+                                <li><a href="/documentation/database/whois-database.html">Whois Database Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="single-fta">
+                            <h3 class="fta-title">Pricing &amp; Accounts</h3>
+                            <ul class="fta-list">
+                                <li><a href="/pricing/api-plans.html">Pricing</a></li>
+                                <li><a href="/supported-tlds.html">Supported TLDs</a></li>
+                                <li><a href="/Update-Schedule-tlds.html">Update Schedule TLDs</a></li>
+                                <li><a href="/signup.html">Sign Up</a></li>
+                                <li><a href="https://billing.whoisfreaks.com">Sign In</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
+                                <li><a href="/site-navigation.html">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="rowfooter">
+                    <div class="col-xs-12">
+                        <div class="fba-copyright">
+                            <p>Copyright © <span id="currentYear">2022</span> WhoisFreaks. Made with <span
+                                    class="heart">♥</span> in Pakistan
+                                <img src="/pics/pakistan-flag.gif" alt="Pakistan flag">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
